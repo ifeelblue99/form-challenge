@@ -5,7 +5,7 @@ const productsSelector = document.getElementById("products")
 const dateInput = document.getElementById("date-input")
 const submitBtn = document.getElementById("submit-btn")
 
-// const vaild chars
+// vaild chars
 const specialChars = `/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;`
 const validNumbers = "0123456789"
 
@@ -37,8 +37,6 @@ submitBtn.addEventListener("click", (event)=>{
 
     const isNameValid = validateName(nameInput.value)
     const isphoneValid = validatePhone(phoneInput.value)
-
-    console.log()
 
     if (isphoneValid && isNameValid) {
         const gender = document.querySelector('input[name=gender]:checked').value
