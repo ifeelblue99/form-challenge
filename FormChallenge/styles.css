@@ -1,0 +1,130 @@
+:root{
+    --main-clr: #2a2438;
+    --accent-clr: #dbd8e3;
+    --secondary-clr: #5c5470;
+}
+body{
+    font-family: sans-serif;
+    background-color: var(--main-clr);
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+hr{
+    border-color: #2a243834;
+}
+
+/*container*/
+#form-container {
+  padding: .1rem 1rem;
+  border-radius: 10px;
+  background-color: var(--secondary-clr);
+  max-width: 60vw;
+  min-width: 300px;
+}
+.form-item {
+  position: relative;
+  margin-top: 1.8rem;
+}
+.form-item input {
+    color: var(--accent-clr);
+    letter-spacing: 1.1px;
+  max-width: 450px;
+  height: 40px;
+  border-radius: 5px;
+  background: transparent;
+  outline: none;
+  border: solid 1px var(--accent-clr);
+  transition: all 0.3s ease;
+  padding-left: 15px;
+}
+.form-item input:focus {
+    border-color: var(--accent-clr);
+}
+.form-item label {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 10px;
+  color: var(--accent-clr);
+  transition: all 0.3s ease;
+}
+.form-item input:focus + label,
+.form-item input:valid + label {
+  font-size: 11px;
+  top: -15px;
+  color: var(--main-clr);
+  background-color: aquamarine;
+}
+.form-item input:focus + label {
+  padding: 0.2rem;
+  border-radius: 5px;
+  color: rgb(44, 44, 44);
+}
+.form-item input:hover + label {
+  border-radius: 5px;
+  background-color: aquamarine;
+  color: rgb(44, 44, 44);
+}
+
+/* radio buttons */
+.radio-buttons{
+    color: var(--accent-clr);
+}
+.radio-buttons input{
+    cursor: pointer;
+}
+#male-radio{
+    margin-bottom: .5rem;
+}
+/*end*/
+
+/* product picker */
+.product-picker{
+    color: var(--accent-clr);
+}
+.product-picker select{
+    cursor: pointer;
+    font-family: sans-serif;
+    border: none;
+    padding: .5rem;
+}
+
+/*end*/
+
+/* date picker */
+.date-picker{
+    color: var(--accent-clr);
+}
+#date-input{
+    cursor: pointer;
+    font-family: sans-serif;
+    border: none;
+    padding: .5rem;
+}
+/*end*/
+
+
+/* submit button style and interactivity*/
+button {
+    border: none;
+  color: rgb(29, 61, 61);
+  font-weight: bold;
+  background-color: var(--accent-clr);
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+button:hover {
+  background-color: aquamarine;
+}
+button:active {
+  transform: scale(0.97);
+}
+/*end*/

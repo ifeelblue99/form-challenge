@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="form-validation.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form id="form-container">
+        <h2>Form<span style="font-size: .7rem; margin-left: .5rem;">Fill in the details.</span></h2>
+        <!--Name-->
+        <div class="form-item" >
+            <input type="text" required id="name-input" autocomplete="on">
+            <label for="name">Name</label>
+        </div>
+        <hr>
+        <!--Radio Buttons-->
+        <div class="radio-buttons">
+            <h3>Gender:</h3>
+            <div id="male-radio">
+                <input type="radio" checked value="male" name="gender" id="male-radio-btn">
+                <label for="male-radio-btn">Male</label>
+            </div>
+            <div id="female-radio">
+                <input type="radio" value="female" name="gender" id="female-radio-btn">
+                <label for="gender">Female</label>
+            </div>
+        </div>
+        <hr>
+        <!--Podact Picker-->
+        <div class="product-picker">
+            <h3>Choose a product:</h3>
+            <select id="products">
+                <option value="Pants">Pants</option>
+                <option value="Glasses">Glasses</option>
+                <option value="Shoes">Shoes</option>
+            </select>
+        </div>
+        <hr>
+        <!--Date Picker-->
+        <div class="date-picker">
+            <h3>Date:</h3>
+            <input type="date" required name="date" id="date-input">
+        </div>
+        <hr>
+        <!--Phone-->
+        <div class="form-item">
+            <input required type="text" id="phone-input" autocomplete="on" required>
+            <label for="phone-number">Phone: <em>0 123 456 78 99</em></label>
+        </div>
+        <!--Submit Button-->
+        <button id="submit-btn">Next</button>
+    </form>
+</body>
+
+</html>
